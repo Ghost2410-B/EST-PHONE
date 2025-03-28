@@ -15,16 +15,35 @@ article{
 
 article>main{
     background-color: brown;
-    height: 50vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
+article>main .slider{
+    position: relative;
+}
+
+article>main img{
+    width: 100%;
+}
+
+article>main .description{
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.195);
+    bottom: 1em;
+    font-size: 1.5em;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+
+
 
 article>aside{
-    background-color: green;
+    background-color: rgb(126, 126, 126);
     height: fit-content;
     display: flex;
     gap:0.3em;
@@ -32,18 +51,42 @@ article>aside{
 }
 
 article aside #far{
-    background-color: burlywood;
+
     display: block;
     width: 99%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
+    animation: far-animation 5s ease-in-out infinite ;
+    animation-direction: alternate;
+}
+
+
+@keyframes far-animation {
+    from{background-color: red;}
+    to{background-color: rgb(188, 188, 0);}
 }
 
 article aside .news{
     margin-top: 1.5em;
     background-color: aliceblue;
     width: 100%;
-    height: 30vh;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
 }
+
+article aside .news img{
+    width: 100%;
+}
+
+article aside .news .description{
+    position: absolute;
+    bottom: 1em;
+    background-color: rgba(215, 242, 250, 0.63);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+

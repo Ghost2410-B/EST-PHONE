@@ -57,3 +57,12 @@ search_button.onclick=()=>{
 }
 
 
+
+
+//social media show
+const social_container=document.getElementById("social-media");
+social_container.onclick=()=>{
+    social_container.style.transform="translateX(3.3em)";
+}
+
+
