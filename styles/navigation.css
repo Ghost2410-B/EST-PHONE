@@ -30,14 +30,15 @@
 }
 
 nav{
-    background-image: linear-gradient(to left,red,green);
+    background-image: linear-gradient(45deg,lightblue,rgb(49, 49, 255));
     position: sticky;
     top: 0.3em;
     height: 8vh;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    padding-right:4em;
     z-index: 9999;
 }
 
@@ -48,28 +49,31 @@ nav>img{
 }
 
 #search-bar{
-    height: 1.5em;
-    width: 10em;
+    height: 1.6em;
+    width:fit-content;
     overflow: hidden;
     display: flex;
 }
 
 #search-area{
-    width: 80%;
+    width: 0em;
     padding-left: 0.5em;
     font-weight: 500;
-    border: 1px  solid lightblue;
+    border: none;
     border-radius: 0.1em;
+    background-color: transparent;
+    transition: all 0.8s ease-in;
 }
+
+
+
+
 #search-submit{
     background-color: rgb(0, 136, 255);
     border: none;
-    width: 20%;
+    width: 2em;
     border-radius: 0.2em;
-
-
 }
-
 
 #nav-button{
     font-size: 2em;

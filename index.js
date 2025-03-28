@@ -41,3 +41,19 @@ scroll_button.onclick=()=>{
         block: "start" // You can also use "center", "end" depending on your preference
       });
 }
+
+
+
+
+//search-bar animation
+
+
+const search_area=document.getElementById("search-area");
+const search_button=document.getElementById("search-submit");
+
+
+search_button.onclick=()=>{
+    search_area.style="border: 1px  solid lightblue;width: 8em;background-color: lightblue;";
+}
+
+
