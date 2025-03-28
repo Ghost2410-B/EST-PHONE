@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#espace-etudiant{
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center ;
+}
+
+#espace-title{
+    background-color: gray;
+    width: 100%;
+    font-size: 2em;
+}
+
+#espace-e-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#espace-e-container .content{
+    background-color: lightskyblue;
+    width:48%;
+    height: 6em;
+    margin: 0.1em;
+    border-radius: 1em;
+}
+#espace-e-container .content img{
+    height: 100%;
+}
+

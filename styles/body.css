@@ -1,0 +1,31 @@
+body{
+    overflow-x: hidden;
+}
+
+
+
+#scroll-button{
+    background-color: goldenrod;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+    border-radius: 1em;
+    z-index: 9999999;
+    bottom: -3em;
+    right: 1em;
+    animation: scroll-button cubic-bezier(1,-0.42, 0.47, 2.28);
+    animation-timeline: scroll();
+    cursor:pointer;
+}
+#scroll-button i{
+    font-size: 1.5em;
+} 
+@keyframes scroll-button{
+    to{
+        transform: translateY(-10em);
+    }
+    
+}

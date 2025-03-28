@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+article{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    height: fit-content;
+}
+
+article>main{
+    background-color: brown;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+article>aside{
+    background-color: green;
+    height: fit-content;
+    display: flex;
+    gap:0.3em;
+    padding: 0.2em;
+}
+
+article aside #far{
+    background-color: burlywood;
+    display: block;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+article aside .news{
+    margin-top: 1.5em;
+    background-color: aliceblue;
+    width: 100%;
+    height: 30vh;
+}
